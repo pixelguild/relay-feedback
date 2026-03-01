@@ -1,0 +1,61 @@
+name: Feature Request
+description: Suggest an idea or improvement
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We'd love to hear your ideas for improving Relay. Please describe what you'd like to see.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the pain point or workflow gap this feature would address.
+      placeholder: "I frequently need to... but currently I have to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe your ideal solution
+      description: How would this work from a user's perspective?
+      placeholder: "A new option in the request config that lets me..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you've considered
+      description: Any workarounds or other approaches you've thought about.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Feature area
+      options:
+        - Request building (URL, params, headers, body)
+        - Response viewing (JSON, HTML, PDF, etc.)
+        - Collections & folders
+        - Variables & environments
+        - Authentication
+        - Import / export
+        - Code generation
+        - iCloud sync
+        - UI / keyboard shortcuts
+        - Performance
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Mockups or examples
+      description: If you have mockups, screenshots of similar features in other tools, or diagrams — paste them here.
+    validations:
+      required: false
